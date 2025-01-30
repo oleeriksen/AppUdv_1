@@ -4,4 +4,4 @@ using Modul1;
 
 Console.WriteLine("Hello, World!");
 
-new Greeting().Run();
+Funktioner.Run();
