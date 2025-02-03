@@ -12,7 +12,7 @@ public class Opgave1
             Console.WriteLine(v);
 
         b[0] = 1;
-        for (int i = 0; i < b.Length; i++)
+        for (int i = 1; i < b.Length; i++)
             b[i] = 2 * b[i - 1];
         
         foreach (int v in b)
