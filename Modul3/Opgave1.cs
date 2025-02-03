@@ -1,23 +1,49 @@
+using System.Xml;
+
 namespace Modul3;
 
 public class Opgave1
 {
-    public static void Run()
+    public void Run()
     {
-        int[] a = { 12, 34, 12, 34, 56 };
+        int[] tal;
+        int antal = ReadInt("Indtast antal tal: ");
+        tal = new int[antal];
+        for (int i = 0; i < tal.Length; i++)
+            tal[i] = ReadInt("Indtast tal: ");
+        Console.WriteLine("Her kommer lidt statistik");
+        Console.WriteLine($"Gennemsnit: {Average(tal)}");
+        Console.WriteLine($"Varians: {Varians(tal)}");
+        Console.WriteLine($"St afvigelse: {Deviation(tal)}");
 
-        int[] b = new int[12];
-        
-        foreach (int v in a)
-            Console.WriteLine(v);
 
-        b[0] = 1;
-        for (int i = 1; i < b.Length; i++)
-            b[i] = 2 * b[i - 1];
-        
-        foreach (int v in b)
-            Console.WriteLine(v);
+    }
+
+    int ReadInt(string prefix = "")
+    {
+        Console.Write(prefix);
+        return int.Parse(Console.ReadLine());
     }
     
-    
+    //Returnerer gennemsnittet af tallene i a - NIY
+    double Average(int[] a)
+    {
+        return -1;
+    }
+
+//Returnerer variansen af tallene i a - NIY
+    double Varians(int[] a)
+    {
+        return -2;
+    }
+
+//Returnerer standardafvigelsen af tallene i a - NIY
+    double Deviation(int[] a)
+    {
+        return -3;
+    }
+
+
+
+
 }
