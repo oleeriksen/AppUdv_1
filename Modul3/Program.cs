@@ -2,7 +2,7 @@
 
 using Modul3;
 
-new Opgave1().Run();
+new Opgave2().Run();
 
 
     

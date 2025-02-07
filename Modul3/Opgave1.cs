@@ -28,19 +28,27 @@ public class Opgave1
     //Returnerer gennemsnittet af tallene i a - NIY
     double Average(int[] a)
     {
-        return -1;
+        double sum = 0;
+        foreach (int value in a)
+            sum += value;
+        return sum/a.Length;
     }
 
 //Returnerer variansen af tallene i a - NIY
     double Varians(int[] a)
     {
-        return -2;
+        double avg = Average(a);
+        double sum = 0;
+        foreach (int value in a)
+            sum += Math.Pow(value - avg, 2);
+        return sum;
     }
 
 //Returnerer standardafvigelsen af tallene i a - NIY
     double Deviation(int[] a)
     {
-        return -3;
+        double varians = Varians(a);
+        return Math.Sqrt(varians);
     }
 
 
