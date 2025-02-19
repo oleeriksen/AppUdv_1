@@ -9,4 +9,6 @@ public class Ansat
     public double TrækProcent { get; set; }
     public bool FrokostOrdning { get; set; }
     public bool GaveOrdning { get; set; }
+
+    public virtual double BruttoLøn() { return -1; }
 }
