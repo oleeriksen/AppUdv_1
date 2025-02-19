@@ -15,7 +15,7 @@ namespace Modul5
             r = new();
         }
 
-        public void Roll() {
+        public virtual void Roll() {
             eyes = r.Next(size)+1;
         }
 

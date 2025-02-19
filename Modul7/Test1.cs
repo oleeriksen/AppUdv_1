@@ -7,7 +7,8 @@ public class Test1
         Deltidsansat peter = new Deltidsansat
         {
             Navn = "Peter", Adresse = "byvej 1, 1234 By", Email = "peter@mail.dk",
-            Fradrag = 4000, TrækProcent = 38, FrokostOrdning = true, GaveOrdning = false, Timeløn = 123, Timer = 12
+            Fradrag = 4000, TrækProcent = 38, FrokostOrdning = true, GaveOrdning = false, 
+            Timeløn = 123, Timer = 12
         };
         Fuldtidsansat thomas = new Fuldtidsansat
         {

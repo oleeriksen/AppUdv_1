@@ -1,3 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+using Modul7;
+
+Console.WriteLine("Hello modul 7");
+TestDiceCup.Run();
